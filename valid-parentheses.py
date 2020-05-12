@@ -1,5 +1,7 @@
-# https://leetcode.com/problems/valid-parentheses/
-# 20. Valid Parentheses
+"""
+20. Valid Parentheses
+https://leetcode.com/problems/valid-parentheses/
+"""
 
 
 class Solution:
@@ -30,4 +32,3 @@ print('Example 4: '+str(s.isValid("([)]")))
 print('Example 5: '+str(s.isValid("{[]}")))
 print('Submit 1: '+str(s.isValid("]")))
 print('Submit 2: '+str(s.isValid("[")))
-

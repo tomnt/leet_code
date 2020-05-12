@@ -1,3 +1,11 @@
+"""
+38. Count and Say
+https://leetcode.com/problems/count-and-say/
+Runtime: 40 ms, faster than 75.17% of Python3 online submissions for Count and Say.
+Memory Usage: 13.9 MB, less than 6.38% of Python3 online submissions for Count and Say.
+"""
+
+
 class Solution:
     def countAndSay(self, n: int) -> str:
         """
@@ -57,13 +65,6 @@ class Solution:
         return l_count
 
 
-'''
-https://leetcode.com/problems/count-and-say/
-Details 
-Runtime: 40 ms, faster than 75.17% of Python3 online submissions for Count and Say.
-Memory Usage: 13.9 MB, less than 6.38% of Python3 online submissions for Count and Say.
-Next challenges:
-'''
 s = Solution()
 
 print('Example 0: '+s.countAndSay(0))

@@ -1,4 +1,16 @@
+"""
+21. Merge Two Sorted Lists
+https://leetcode.com/problems/merge-two-sorted-lists/
+Runtime: 48 ms, faster than 24.86% of Python3 online submissions for Merge Two Sorted Lists.
+Memory Usage: 13.8 MB, less than 6.61% of Python3 online submissions for Merge Two Sorted Lists.
+"""
 # Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+
+
 class ListNode:
     def __init__(self, x):
         self.val = x
@@ -51,11 +63,3 @@ class Solution:
 s: Solution = Solution()
 print('Example: ' + str(s.get_list(s.mergeTwoLists(s.get_list_node([1, 2, 4]), s.get_list_node([1, 3, 4])))))
 print('Example Test 1: ' + str(s.get_list(s.mergeTwoLists(s.get_list_node([]), s.get_list_node([])))))
-
-'''
-https://leetcode.com/problems/merge-two-sorted-lists/
-21. Merge Two Sorted Lists
-
-Runtime: 48 ms, faster than 24.86% of Python3 online submissions for Merge Two Sorted Lists.
-Memory Usage: 13.8 MB, less than 6.61% of Python3 online submissions for Merge Two Sorted Lists.
-'''

@@ -1,5 +1,14 @@
-# https://leetcode.com/problems/add-two-numbers/
+"""
+2. Add Two Numbers
+https://leetcode.com/problems/add-two-numbers/
+Runtime: 76 ms, faster than 79.10% of Python3 online submissions for Add Two Numbers.
+Memory Usage: 13.9 MB, less than 5.67% of Python3 online submissions for Add Two Numbers.
+"""
 # Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
 
 
 class ListNode:
@@ -36,15 +45,3 @@ class Solution:
 
 s = Solution()
 print("Example: "+str(s.get_int(s.addTwoNumbers(s.get_list_node(342),s.get_list_node(465)))))
-
-'''
-https://leetcode.com/problems/add-two-numbers/
-2. Add Two Numbers
-Test case
-    [2,4,3]
-    [5,6,4]
-Success
-Details 
-    Runtime: 76 ms, faster than 79.10% of Python3 online submissions for Add Two Numbers.
-    Memory Usage: 13.9 MB, less than 5.67% of Python3 online submissions for Add Two Numbers.
-'''

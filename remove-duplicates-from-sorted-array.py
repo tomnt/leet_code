@@ -1,3 +1,11 @@
+"""
+26. Remove Duplicates from Sorted Array
+https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+Runtime: 96 ms, faster than 78.07% of Python3 online submissions for Remove Duplicates from Sorted Array.
+Memory Usage: 15.7 MB, less than 5.74% of Python3 online submissions for Remove Duplicates from Sorted Array.
+"""
+
+
 class Solution:
     def removeDuplicates(self, nums: list) -> int:
         """
@@ -18,13 +26,7 @@ print('Example 2: ' + str(s.removeDuplicates([0, 0, 1, 1, 1, 2, 2, 3, 3, 4])))
 
 print('User Test 1: ' + str(s.removeDuplicates([])))
 print('User Test 2: ' + str(s.removeDuplicates([-1000, -50, 0, 1, 1, 1, 1, 1, 20, 300, 4000, 50000])))
-'''
-https://leetcode.com/problems/remove-duplicates-from-sorted-array/
-26. Remove Duplicates from Sorted Array
-Runtime: 96 ms, faster than 78.07% of Python3 online submissions for Remove Duplicates from Sorted Array.
-Memory Usage: 15.7 MB, less than 5.74% of Python3 online submissions for Remove Duplicates from Sorted Array.
-Next challenges:
-'''
+
 
 '''
 class Solution:

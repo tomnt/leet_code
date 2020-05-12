@@ -1,3 +1,9 @@
+"""
+27. Remove Element
+https://leetcode.com/problems/remove-element/
+"""
+
+
 class Solution:
     def removeElement(self, nums: list, val: int) -> int:
         '''
