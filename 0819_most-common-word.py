@@ -1,9 +1,9 @@
 """
 819. Most Common Word
+Amazon
 https://leetcode.com/problems/most-common-word/
-Runtime: 44 ms
-Memory Usage: 13.8 MB
-You are free to continue working on this question, but please note that only your first accepted submission will be counted.
+Runtime: 64 ms, faster than 7.40% of Python3 online submissions for Most Common Word.
+Memory Usage: 13.8 MB, less than 78.87% of Python3 online submissions for Most Common Word.
 """
 
 
@@ -19,10 +19,9 @@ class Solution:
         counts = {}
         for word in words:
             if word in counts:
-                counts[word] = counts[word] + 1
+                counts[word] +=1
             else:
                 counts[word] = 1
-        print(counts)
         return max(counts, key=counts.get)
 
 
