@@ -1,34 +1,34 @@
 """
 20. Valid Parentheses
 https://leetcode.com/problems/valid-parentheses/
+Amazon: Phone Interview
+Runtime: 56 ms, faster than 8.76% of Python3 online submissions for Valid Parentheses.
+Memory Usage: 13.9 MB, less than 45.47% of Python3 online submissions for Valid Parentheses.
 """
 
 
 class Solution:
     def isValid(self, s: str) -> bool:
-        l_s = list(s)
-        d_open = {'(': 0, '{': 1, '[': 2}
-        d_close = {')': 0, '}': 1, ']': 2}
-        l_tmp = []
-        for c in l_s:
-            if c in d_open:
-                l_tmp.append(d_open.get(c))
-            if c in d_close:
-                if len(l_tmp) > 0 and l_tmp[-1] == d_close.get(c):
-                    l_tmp.pop()
+        closure = {')': '(', '}': '{', ']': '['}
+        opener = ['(', '{', '[']
+        opened = []
+        for c in list(s):
+            if c in opener:
+                opened.append(c)
+            if c in closure:
+                if closure[c] in opener and closure[c] in opened and len(opened) > 0:
+                    if opened[-1] == closure[c]:
+                        opened.pop(-1)
                 else:
                     return False
-        if len(l_tmp) == 0:
-            return True
-        else:
-            return False
+        return len(opened) == 0
 
 
 s = Solution()
-print('Example 1: '+str(s.isValid("()")))
-print('Example 2: '+str(s.isValid("()[]{}")))
-print('Example 3: '+str(s.isValid("(]")))
-print('Example 4: '+str(s.isValid("([)]")))
-print('Example 5: '+str(s.isValid("{[]}")))
-print('Submit 1: '+str(s.isValid("]")))
-print('Submit 2: '+str(s.isValid("[")))
+print("Example 1: Expected: true , Actual: ", s.isValid("()"))
+print("Example 2: Expected: true , Actual: ", s.isValid("()[]{}"))
+print("Example 3: Expected: false, Actual: ", s.isValid("(]"))
+print("Example 4: Expected: false, Actual: ", s.isValid("([)]"))
+print("Example 5: Expected: true , Actual: ", s.isValid("{[]}"))
+print("Test 1: Expected: true , Actual: ", s.isValid("]"))
+print("Test 2: Expected: false , Actual: ", s.isValid("(])"))
