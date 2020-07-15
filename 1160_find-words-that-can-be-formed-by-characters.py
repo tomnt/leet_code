@@ -1,6 +1,6 @@
 """
 1160. Find Words That Can Be Formed by Characters
-Amazon
+Amazon: Online Assessment
 https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/
 
 Runtime: 1992 ms, faster than 5.08% of Python3 online submissions for Find Words That Can Be Formed by Characters.

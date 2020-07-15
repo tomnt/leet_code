@@ -1,6 +1,6 @@
 """
 819. Most Common Word
-Amazon
+Amazon: Online Assessment
 https://leetcode.com/problems/most-common-word/
 Runtime: 64 ms, faster than 7.40% of Python3 online submissions for Most Common Word.
 Memory Usage: 13.8 MB, less than 78.87% of Python3 online submissions for Most Common Word.

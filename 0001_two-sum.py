@@ -1,7 +1,7 @@
 """
 1. Two Sum
 https://leetcode.com/problems/two-sum/
-Amazon
+Amazon: Online Assessment
 Runtime: 92 ms, faster than 33.38% of Python3 online submissions for Two Sum.
 Memory Usage: 15.2 MB, less than 40.47% of Python3 online submissions for Two Sum.
 """
